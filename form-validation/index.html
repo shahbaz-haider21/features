@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h3 class="text">Register With Us</h3>
+
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="user">Username:</label>
+                    <input type="text" name="username" id="usernames" class="form-control">
+                    <h5 id="usercheck">**Username is missing</h5>
+                </div>
+
+                <div class="form-group">
+                    <label for="user">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control">
+                    <h5 id="emailvalid">Your email must be a valid email</h5>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="pass" id="password" class="form-control">
+                    <h5 id="passcheck">**Please Fill the password</h5>
+                </div>
+
+                <div class="form-group">
+                    <label for="conpassword">Confirm Password:</label>
+                    <input type="password" name="username" id="conpassword" class="form-control">
+                    <h5 id="conpasscheck">**Password didn't match</h5>
+                </div>
+                <div class="submit form-group">
+                    <input type="submit" id="submitbtn" value="Submit" class="btn">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="success" id="success">
+        <p>Your form has been successfully submitted </p>
+        <button class="btn-success" id="btn-success">OK</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
